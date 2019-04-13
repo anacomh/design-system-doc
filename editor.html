@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editor</title>
+  <link rel="shortcut icon" href="https://material.io/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="bundle-home.css">
+</head>
+<body class="home">
+  <aside class="mdc-drawer shrine-drawer">
+    <div class="mdc-drawer__header">
+      <svg class="shrine-logo-drawer" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="48px" height="48px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" fill="#000000" focusable="false">
+        <g>
+          <g>
+            <path d="M17,2H7L2,6.62L12,22L22,6.62L17,2z M16.5,3.58l3.16,2.92H16.5V3.58z M7.59,3.5H15v3H4.34L7.59,3.5z
+               M11.25,18.1L7.94,13h3.31V18.1z M11.25,11.5H6.96L4.69,8h6.56V11.5z M16.5,12.32 M12.75,18.09V8h6.56L12.75,18.09z"/>
+          </g>
+          <rect fill="none" width="24" height="24"/>
+        </g>
+      </svg>
+      <h1 class="shrine-title">Documentação</h1>
+    </div>
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+        <a class="mdc-list-item mdc-list-item--activated" aria-selected="true" tabindex="0" href="#">
+          <span class="mdc-list-item__text">Checkbox</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <span class="mdc-list-item__text">Radio Button</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <span class="mdc-list-item__text">Accessories</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <span class="mdc-list-item__text">Shoes</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <span class="mdc-list-item__text">Tops</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <span class="mdc-list-item__text">Bottoms</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <span class="mdc-list-item__text">Dresses</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <span class="mdc-list-item__text">My Account</span>
+        </a>
+      </nav>
+    </div>
+  </aside>
+  <main>
+    <header>
+            <div class="mdc-text-field component-name">
+                    <input type="text" class="mdc-text-field__input" id="username-input" name="username" required>
+                    <label class="mdc-floating-label" for="username-input">Username</label>
+                    <div class="mdc-line-ripple"></div>
+            </div>
+      <div class="mdc-chip-set">
+          <div class="mdc-chip" tabindex="0">
+            <div class="mdc-chip__text">Chip content</div>
+          </div>
+          <div class="mdc-chip" tabindex="0">
+                <div class="mdc-chip__text">Chip content</div>
+            </div>          
+            <div class="mdc-chip" tabindex="0">
+                    <div class="mdc-chip__text">Chip content</div>
+            </div>            
+      </div>
+    </header>
+    <div class="mdc-tab-bar" role="tablist">
+        <div class="mdc-tab-scroller">
+          <div class="mdc-tab-scroller__scroll-area">
+            <div class="mdc-tab-scroller__scroll-content">
+              <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <!-- <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span> -->
+                  <span class="mdc-tab__text-label">Uso</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+              <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <!-- <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span> -->
+                    <span class="mdc-tab__text-label">Estados</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+              </button>
+                <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                    <span class="mdc-tab__content">
+                      <!-- <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span> -->
+                      <span class="mdc-tab__text-label">Anatomia e Estilos</span>
+                    </span>
+                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                </button>                              
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="content">
+          <form action="">
+            <h2>Uso</h2>
+            <div class="mdc-text-field mdc-text-field--textarea">
+                    <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+                    <div class="mdc-notched-outline">
+                      <div class="mdc-notched-outline__leading"></div>
+                      <div class="mdc-notched-outline__notch">
+                        <label for="textarea" class="mdc-floating-label">Textarea Label</label>
+                      </div>
+                      <div class="mdc-notched-outline__trailing"></div>
+                    </div>
+            </div>
+
+
+            <h2>Estados</h2>
+            <div class="mdc-text-field mdc-text-field--textarea">
+                    <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+                    <div class="mdc-notched-outline">
+                      <div class="mdc-notched-outline__leading"></div>
+                      <div class="mdc-notched-outline__notch">
+                        <label for="textarea" class="mdc-floating-label">Textarea Label</label>
+                      </div>
+                      <div class="mdc-notched-outline__trailing"></div>
+                    </div>
+            </div>
+
+            
+            <h2>Anatomia e Estilos</h2>
+            <div class="mdc-text-field mdc-text-field--textarea">
+                    <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+                    <div class="mdc-notched-outline">
+                      <div class="mdc-notched-outline__leading"></div>
+                      <div class="mdc-notched-outline__notch">
+                        <label for="textarea" class="mdc-floating-label">Anatomia e estilos</label>
+                      </div>
+                      <div class="mdc-notched-outline__trailing"></div>
+                    </div>
+            </div>
+            <button class="mdc-button mdc-button--raised next">
+                    <span class="mdc-button__label">
+                      Entrar
+                    </span>
+            </button>            
+        </form> 
+      </section>
+
+
+</main>
+  <script src="bundle-home.js" async></script>
+</body>
+</html>
