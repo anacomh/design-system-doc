@@ -44,12 +44,23 @@
                                 $_POST['usage'],
                                 $_POST['states'],
                                 $_POST['anatomy'],
-                                $_POST['guidelines'],
+                                $_POST['guidelines']
                               );
             //Redirect
             $this->redirect('components/detail/'.$this->id);
   
-          }        
+          }     
+          
+          public function trash(){
+            //Load books model
+            $components_model = $this->loadModel('Components');
+            //update database
+            $components_model->trash( $this->id );
+            //Redirect
+            $this->redirect('components');
+          }
+          
+          
     }
 
  ?>

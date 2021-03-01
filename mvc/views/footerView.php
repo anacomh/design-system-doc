@@ -1,20 +1,16 @@
+
+			</div>
+
 </div>
+
 </div>
-</main>
 
 
-<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
-<script>
-var simplemde = new SimpleMDE();
-</script>
-
-
-
-
-<script type="text/javascript" src="<?php echo JS_URL.'jquery3.1.1.js'; ?>"></script>
-<script type="text/javascript" src="<?php echo JS_URL.'script.js'; ?>"></script>
-
-<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script type="application/javascript" src="<?php echo ADMIN_JS; ?>jquery3.1.1.js"></script>
+<!-- Include and initialize datepicker-->
+<link  href="<?php echo ADMIN_JS.'datepicker/dist/datepicker.css'; ?>" rel="stylesheet" type="text/css">
+<script src="<?php echo ADMIN_JS.'datepicker/dist/datepicker.js'; ?>"></script>
+<script type="application/javascript" src="<?php echo ADMIN_JS; ?>script.js"></script>
 
 </body>
 </html>

@@ -4,12 +4,9 @@
 
         //Default action
         public function index(){
-
-            //Load models
-            $components_model = $this->loadModel('Components');
-
-            //Save data to View
-            $this->saveData('components', $components_model->getComponents() );
+            $header_model = $this->loadModel('Components');
+            //Send data to view
+            $this->saveData('menu', $header_model->getComponents() );
 
             //Load View
             $this->loadView('home');

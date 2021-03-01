@@ -1,9 +1,9 @@
-
-	<div class="page-header">
-		<h2 class="page-title">
-			Editar Componente
-		</h2>
-	</div>
+<header>
+  <div class="page-header">
+	<h1>Editar componente</h1>
+	</a>
+  </div>
+</header>
 
 	<div class="page-container">
 		<form action="<?php echo ADMIN_URL.'components/update/'.$component->component_id; ?>" method="POST" enctype="multipart/form-data" class="editor-form">
@@ -12,7 +12,6 @@
 			<input type="text" name="title" value="<?php echo $component->component_title; ?>" />
 
 			<label>Status</label>
-
 			<?php if ( $component->component_status == 1) { ?>
 			<div class="radio">
 				<input type="radio" name="status" value="1" checked>
@@ -38,22 +37,24 @@
 			</div>
 			<?php } ?>
 
-
+			<div class="divider"></div>
 
 			<label>Uso</label>
 			<textarea name="usage" id="text-editor-1"><?php echo $component->component_usage; ?></textarea>
 
+			<div class="divider"></div>
 			<label>Estados</label>
 			<textarea name="states" id="text-editor-2"><?php echo $component->component_states; ?></textarea>
 
+			<div class="divider"></div>
 			<label>Anatomia e Estilos</label>
 			<textarea name="anatomy" id="text-editor-3"><?php echo $component->component_anatomy; ?></textarea>
 
+			<div class="divider"></div>
 			<label>Guidelines</label>
 			<textarea name="guidelines" id="text-editor-4"><?php echo $component->component_guidelines; ?></textarea>			
 
-			<input type="submit" value="Guardar"/>
-
+			<input class="primary" type="submit" value="Salvar"/> <a class="ghost" href="<?php echo BASE_URL.'components/detail/'.$component->component_id; ?>">Ver publicação</a>
 		</form>
 
 

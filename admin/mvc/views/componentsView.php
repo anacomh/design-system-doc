@@ -1,33 +1,19 @@
+<header>
+  <div class="page-header">
+	<h1>Componentes</h1>
+	<a href="<?php echo ADMIN_URL.'components/create/'; ?>" class="new-item">
+		<i class="fa fa-plus-circle"></i> Novo
+	</a>
+  </div>
+</header>
 
-	<div class="page-header">
-		<div class="row">
-			<div class="col col6 left">
-				<h2 class="page-title">
-					Componentes
-				</h2>
-			</div>
-			<div class="col col6 right text-right">
-
-				<a href="<?php echo ADMIN_URL.'components/create/'; ?>" class="new-item">
-					<i class="fa fa-plus-circle"></i> Novo
-				</a>
-
-
-				<form action="" method="POST" class="search-form">
-					<label>Pesquisar</label>
-					<input type="text" name="search" required/>
-				</form>
-
-			</div>
-		</div>
-	</div>
-
+<div class="page-container">
 
 	<table class="list-table">
 		<tr>
 			<th class="text-left">Título</th>
 			<th class="text-left">Status</th>
-			<th>Publicar</th>
+			<!--   -->
 			<th>Editar</th>
 			<th>Apagar</th>
 		</tr>
@@ -54,7 +40,7 @@
 		
 			</td>
 			<!-- Status -->
-			<td>
+			<!-- <td>
 
 				<?php if( $component->component_visible == 1 ){ ?>
 				<a href="" class="list-visible">
@@ -69,7 +55,7 @@
 
 				<?php } ?>
 
-			</td>
+			</td> -->
 			<!-- Edit -->
 			<td>
 				<a href="<?php echo ADMIN_URL.'components/detail/'.$component->component_id; ?>">
@@ -86,3 +72,4 @@
 		<?php } ?>
 
 	</table>
+</div>

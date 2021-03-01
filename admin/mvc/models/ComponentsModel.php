@@ -4,7 +4,7 @@
         
         public function getAll(){
             return $this->database->getRows("SELECT * FROM components
-                                             WHERE component_trash = 0");
+                                             WHERE component_trash = 0 ORDER BY component_title ASC");
           }
 
           public function getDetail($id){
@@ -32,8 +32,13 @@
             $new_id = $this->database->insert("INSERT INTO components() VALUES ()");
             return $new_id;
           }          
-    
-    
+          
+          public function trash($id){
+            $this->database->query("UPDATE components SET component_trash = 1
+                                    WHERE component_id = '$id' ");
+          }
+
+          
         }
 
  ?>

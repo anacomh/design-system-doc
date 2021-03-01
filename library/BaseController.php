@@ -36,6 +36,12 @@
 
         }
 
+        private function checkPermission(){
+            if( !$this->user->isAuth() && $this->controller != 'Login' ){
+              $this->redirect('login');
+            }
+          }
+          
         //Execute action
         private function action($action_name){
 
@@ -76,7 +82,6 @@
         protected function redirect($path){
             header('location:'.BASE_URL.$path);
         }
-
 
     }
 

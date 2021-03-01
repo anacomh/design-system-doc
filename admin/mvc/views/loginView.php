@@ -12,8 +12,8 @@
 
 	<div class="login-container">
 		<div class="login-module">
-			<h1>
-				<img src="<?php echo IMG_URL.'logo.png'; ?>" />
+			<h1 style="color:#FF003E;">
+				Documentação
 			</h1>
 			<form action="<?php echo ADMIN_URL.'login/login'; ?>" method="post" class="login-form">
 				<input type="text" name="username" placeholder="Username" required/>

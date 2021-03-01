@@ -3,8 +3,8 @@
     class HomeController extends BaseController{
 
         public function index(){
-
-            $this->loadView('home');
+            // redirect('components');
+            $this->redirect('components');
 
         }
 
